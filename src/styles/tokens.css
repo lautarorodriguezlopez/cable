@@ -1,0 +1,18 @@
+:root {
+  --color-bg-primary:       #030305;
+  --color-bg-surface:       #0A0A0F;
+  --color-bg-elevated:      #12121A;
+  --color-accent-cable:     #A5B4C2; /* Silver */
+  --color-accent-bronze:    #A38C76; /* Metallic Bronze */
+  --color-accent-glow:      #05D5E1; /* Cyan Center */
+  --color-accent-warm:      #FF6B6B;
+  --color-accent-ok:        #4ECDC4;
+  --color-text-primary:     #E8ECEF;
+  --color-text-secondary:   #8893A0;
+  --color-text-disabled:    #4A5462;
+  --color-border:           #1C1E26;
+  
+  --font-display: 'Inter', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

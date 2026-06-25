@@ -1,0 +1,68 @@
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  margin-bottom: 8px;
+}
+
+.user-wrapper {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.cable-wrapper {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.message-bubble {
+  padding: 14px 16px;
+  position: relative;
+}
+
+.user-bubble {
+  background-color: var(--color-bg-elevated);
+  border-radius: 18px 18px 4px 18px;
+  color: var(--color-text-primary);
+}
+
+.cable-bubble {
+  background-color: var(--color-bg-surface);
+  border-radius: 4px 18px 18px 18px;
+  color: var(--color-text-primary);
+  /* The Signature Element */
+  border-left: 3px solid var(--color-accent-cable);
+  box-shadow: -4px 0 12px rgba(91,107,255,0.25);
+}
+
+.message-text {
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.insight-chip {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background-color: rgba(91, 107, 255, 0.08);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(91, 107, 255, 0.15);
+}
+
+.insight-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.message-time {
+  font-size: 11px;
+  color: var(--color-text-disabled);
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+}

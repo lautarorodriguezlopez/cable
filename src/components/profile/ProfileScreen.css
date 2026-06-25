@@ -1,0 +1,153 @@
+.profile-screen {
+  padding-bottom: 80px; /* For BottomNav */
+  overflow-y: auto;
+}
+
+.profile-content {
+  padding: 24px;
+}
+
+.personality-section {
+  background-color: var(--color-bg-surface);
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  margin-bottom: 24px;
+}
+
+.archetype-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.icon-wrapper {
+  background-color: var(--color-bg-elevated);
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.archetype-title {
+  font-size: 18px;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.archetype-subtitle {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.personality-desc {
+  font-size: 14px;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.radar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: -16px; /* Offset the radar padding */
+}
+
+.tests-section {
+  margin-top: 32px;
+}
+
+.tests-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.badge-scientific {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--color-accent-cable);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.section-desc {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.test-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.test-card {
+  background-color: var(--color-bg-surface);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s;
+}
+
+.test-card.completed {
+  border-color: var(--color-accent-ok);
+  background-color: rgba(78, 205, 196, 0.05);
+}
+
+.test-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.test-icon {
+  color: var(--color-text-secondary);
+}
+
+.test-info {
+  flex: 1;
+}
+
+.test-info h4 {
+  font-size: 15px;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.test-duration {
+  font-size: 12px;
+  color: var(--color-text-disabled);
+  font-family: var(--font-mono);
+}
+
+.btn-take-test {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--color-bg-elevated);
+  color: var(--color-accent-cable);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.test-description {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}

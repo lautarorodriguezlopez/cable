@@ -1,0 +1,116 @@
+.patterns-screen {
+  padding-bottom: 80px; /* For BottomNav */
+  overflow-y: auto;
+}
+
+.patterns-content {
+  padding: 24px;
+}
+
+.pro-badge {
+  background-color: var(--color-accent-cable);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 8px;
+  letter-spacing: 0.05em;
+}
+
+.unlocked-section {
+  margin-bottom: 32px;
+}
+
+.word-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.word-chip {
+  background-color: var(--color-bg-surface);
+  color: var(--color-text-primary);
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  border: 1px solid var(--color-border);
+}
+
+.mt-24 { margin-top: 24px; }
+.mt-16 { margin-top: 16px; }
+
+.chart-container {
+  background-color: var(--color-bg-surface);
+  padding: 16px 16px 0;
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+}
+
+.locked-section {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.locked-content {
+  padding: 24px;
+  background-color: var(--color-bg-surface);
+  filter: blur(4px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.blurred-text p {
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.upgrade-card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  background: linear-gradient(to top, var(--color-bg-primary) 10%, transparent);
+  text-align: center;
+}
+
+.lock-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.upgrade-card h3 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.price {
+  color: var(--color-accent-cable);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.pro-features {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.pro-features li {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pro-features li::before {
+  content: "✓";
+  color: var(--color-accent-ok);
+}

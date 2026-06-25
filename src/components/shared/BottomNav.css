@@ -1,0 +1,48 @@
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: var(--color-bg-surface);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+  z-index: 100;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60px;
+  position: relative;
+  transition: opacity 0.2s ease;
+  opacity: 0.6;
+}
+
+.nav-item.active {
+  opacity: 1;
+}
+
+.nav-icon {
+  font-size: 24px;
+  filter: grayscale(100%);
+}
+
+.nav-item.active .nav-icon {
+  filter: none;
+}
+
+.nav-indicator {
+  position: absolute;
+  bottom: 12px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-accent-cable);
+}

@@ -1,0 +1,98 @@
+.calendar-screen {
+  padding-bottom: 80px; /* For BottomNav */
+}
+
+.calendar-content {
+  padding: 24px;
+}
+
+.calendar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.current-month {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.calendar-header-cell {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.calendar-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-surface);
+  border-radius: 12px;
+  cursor: default;
+  transition: transform 0.1s;
+}
+
+.calendar-cell.active {
+  cursor: pointer;
+  background-color: var(--color-bg-elevated);
+}
+
+.calendar-cell.active:active {
+  transform: scale(0.92);
+}
+
+.day-number {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: var(--color-text-primary);
+}
+
+.calendar-cell:not(.active) .day-number {
+  color: var(--color-text-disabled);
+}
+
+.mood-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.stats-strip {
+  background-color: var(--color-bg-surface);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
