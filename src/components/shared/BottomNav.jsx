@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, LayoutList, CalendarDays, BarChart2, User } from 'lucide-react';
+import { MessageSquare, LayoutList, CalendarDays, BarChart2, User, BookOpen } from 'lucide-react';
 import './BottomNav.css';
 
 export const BottomNav = ({ activeTab, onChangeTab }) => {
@@ -8,7 +8,8 @@ export const BottomNav = ({ activeTab, onChangeTab }) => {
     { id: 'daily', icon: <LayoutList size={24} />, label: 'Hoy' },
     { id: 'calendar', icon: <CalendarDays size={24} />, label: 'Calendario' },
     { id: 'patterns', icon: <BarChart2 size={24} />, label: 'Patrones' },
-    { id: 'profile', icon: <User size={24} />, label: 'Perfil' }
+    { id: 'profile', icon: <User size={24} />, label: 'Perfil' },
+    { id: 'info', icon: <BookOpen size={24} />, label: 'Info' }
   ];
 
   return (

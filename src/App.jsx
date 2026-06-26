@@ -5,6 +5,7 @@ import { DailyRecap } from './components/daily/DailyRecap';
 import { CalendarView } from './components/calendar/CalendarView';
 import { PatternsView } from './components/analytics/PatternsView';
 import { ProfileScreen } from './components/profile/ProfileScreen';
+import { TherapyInfoScreen } from './components/education/TherapyInfoScreen';
 import { BottomNav } from './components/shared/BottomNav';
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         return <PatternsView />;
       case 'profile':
         return <ProfileScreen />;
+      case 'info':
+        return <TherapyInfoScreen />;
       default:
         return <Splash onStart={() => setCurrentScreen('chat')} />;
     }
