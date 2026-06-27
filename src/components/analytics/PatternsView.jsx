@@ -1,6 +1,5 @@
 import React from 'react';
 import Chart from 'react-apexcharts';
-import { Lock } from 'lucide-react';
 import { Header } from '../shared/Header';
 import { mockPatterns } from '../../data/mockPatterns';
 import './PatternsView.css';
@@ -30,7 +29,6 @@ export const PatternsView = () => {
       <Header 
         title="Tus Patrones" 
         showBack={false} 
-        rightElement={<div className="pro-badge">PRO</div>}
       />
       
       <div className="patterns-content">
@@ -48,26 +46,11 @@ export const PatternsView = () => {
           </div>
         </div>
 
-        <div className="locked-section">
-          <div className="locked-content">
-            <h4 className="section-title">Correlaciones detectadas</h4>
-            <div className="blurred-text">
-              <p>Los lunes con menos de 6hs de sueño correlacionan fuertemente con una subida en la mención de "presión" y "jefe".</p>
-              <p>Tu mejor racha de humor positivo coincide con días donde mencionás "entrenamiento".</p>
-            </div>
-          </div>
-
-          <div className="upgrade-card">
-            <div className="lock-icon"><Lock size={32} /></div>
-            <h3>CABLE Pro</h3>
-            <p className="price">$4.99 / mes</p>
-            <ul className="pro-features">
-              <li>Correlaciones de variables cruzadas</li>
-              <li>Análisis histórico ilimitado</li>
-              <li>Exportación de reportes para terapia</li>
-            </ul>
-            <button className="btn-primary mt-16">Probar 7 días gratis</button>
-            <button className="btn-secondary">No gracias, seguir gratis</button>
+        <div className="unlocked-section" style={{ marginTop: '2rem' }}>
+          <h4 className="section-title">Correlaciones detectadas</h4>
+          <div style={{ color: 'var(--color-text-secondary)', lineHeight: '1.5' }}>
+            <p style={{ marginBottom: '1rem' }}>Los lunes con menos de 6hs de sueño correlacionan fuertemente con una subida en la mención de "presión" y "jefe".</p>
+            <p>Tu mejor racha de humor positivo coincide con días donde mencionás "entrenamiento".</p>
           </div>
         </div>
       </div>
